@@ -7,6 +7,6 @@
 liebiao = ["zhangsan","lisi","wangwu"]
 print(liebiao)  # 结果是将整个列表打印出来 包括 [] 也包含" " 号
 
-# 访问列表
+# 访问列表元素
 print(liebiao[0])  # 结果是 zhangsan  不包含[] 和 ""
 
