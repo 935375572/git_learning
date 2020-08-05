@@ -21,7 +21,7 @@ print(name)
 name = name.lstrip()
 print(name)
 
-# 两边有空白 使用strip()删除
+# 两边有空白 使用strip()删除1
 name = " zhangsan "
 print(name)
 name = name.strip()

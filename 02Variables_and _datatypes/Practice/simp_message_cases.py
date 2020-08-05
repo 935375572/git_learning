@@ -5,7 +5,7 @@ message = "hello Python"
 print(message)
 
 
-# 练习2-2 多条简单消息：将一条消息存储到变量中，再将其打印出来，在将变量的值修改为一条新消息。并打印出来
+# 练习2-2 多条简单消息：将一条消息存储到变量中，再将其打印出来，在将变量的值修改为一条新消息。并打印出来1
 
 messages = "hello java"
 print(messages)

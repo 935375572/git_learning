@@ -8,5 +8,5 @@
 # 将 "Hello Python world" 存储在变量 message中
 message = "Hello Python world"
 
-# 打印message关联的值
+# 打印message关联的值1
 print(message)

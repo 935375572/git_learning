@@ -1,5 +1,5 @@
 """
-制表符  \t
+制表符  \t1
 换行符  \n
 """
 message = "\thello\tbo"
