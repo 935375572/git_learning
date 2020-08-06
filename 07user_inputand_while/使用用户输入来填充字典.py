@@ -1,11 +1,11 @@
 # 创建一个调查程序，其中的循环每次执行时都提示输入 被调查者的名字和回答。 将手机的数据存储到一个字典中
-responses = [] # 空字典
+responses = {} # 空字典
 
 # 设置一个标志，指出调查是否继续
 polling_active = True
 
 while polling_active:
-    name = input("请问你叫什么名字")
+    name = input("\n请问你叫什么名字")
     response = input("你喜欢动物吗")
 
     # 将答卷存储在字典中

@@ -12,6 +12,12 @@
         upper()  字符串转大写
         lower()  字符串转小写
         title()  字符串首字母大写
+    str()函数： 将数字转为字符串
+        在字符串使用整数的时候，可以使用str()函数
+    整数、浮点数：
+        + - * /   使用括号决定优先级
+    
+    
         
     # 将 "Hello Python world" 存储在变量 message中
     message = "Hello Python world"
@@ -82,3 +88,18 @@
     print(name)
     name = name.strip()
     print(name)
+    
+    """
+    整数
+    浮点数
+    + - * /   使用括号决定优先级
+    """
+    print(2 + 3)
+    print(3 - 2)
+    print(2 * 3)
+    print(4 / 2)
+    
+    age = 10
+    # 将数字类型的age用str函数转为字符串
+    message = "祝你" +str(age) + "岁生日快乐"
+    print(message)
