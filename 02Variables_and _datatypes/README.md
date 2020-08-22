@@ -1,33 +1,47 @@
 ### 第二章 变量和简单的数据类型1
-    变量名只能包含字母、数字、下划线(不能是数字开头)
-    变量名不能使用空格，可以用下划线分隔单词
-    不能使用关键字，见名知意
-    少用小写字母i和大写的O  特别像1和0
-    变量名使用小写，这不是规定，是规范
-    删除空白：
-        删除末尾空白：rstrip()
-        删除开头空白：lstrip()
-        删除两端空白：strip()
-    字符串大小写处理     
-        upper()  字符串转大写
-        lower()  字符串转小写
-        title()  字符串首字母大写
-    str()函数： 将数字转为字符串
-        在字符串使用整数的时候，可以使用str()函数
-    整数、浮点数：
-        + - * /   使用括号决定优先级
+        变量名只能包含字母、数字、下划线(不能是数字开头)
+        变量名不能使用空格，可以用下划线分隔单词
+        不能使用关键字，见名知意
+        少用小写字母i和大写的O  特别像1和0
+        变量名使用小写，这不是规定，是规范
+        数据类型：字符串
+        用引号括起的都是字符串：单引号和双引号都可以
     
-    
-        
     # 将 "Hello Python world" 存储在变量 message中
     message = "Hello Python world"
     # 打印message关联的值
     print(message)
+### 删除空白
+        删除末尾空白：rstrip()
+        删除开头空白：lstrip()
+        删除两端空白：strip()
+    message = "hello "
+    # 输出hello
+    print(message)
+    # 对message的内容做删除末尾空白处理
+    print(message.rstrip())
+    # 再次执行 恢复到原来的样子
+    print(message)
+    # 删除末尾的空白，再将新值存储到原来的变量中。
+    message = message.rstrip()
+    # 在输出就依然是处理后的数据
+    print(message)
     
-    """
-    数据类型：字符串
-    用引号括起的都是字符串：单引号和双引号都可以
-    """
+    # 前面有空白 使用lstrip()删除
+    name = " zhangsan"
+    print(name)
+    name = name.lstrip()
+    print(name)
+    
+    # 两边有空白 使用strip()删除1
+    name = " zhangsan "
+    print(name)
+    name = name.strip()
+    print(name)
+### 字符串大小写处理   
+        upper()  字符串转大写
+        lower()  字符串转小写
+        title()  字符串首字母大写
     # 使用方法修改字符串的大小写
     string = "ada name"
     # 使用title()方法将字符串首字母大写显示并输出:对string变量执行title方法
@@ -59,37 +73,17 @@
 
     message = "languages:\n\tjava\n\tpython\n\tC++"
     print(message)
-    
-    """
-    删除空白  删除末尾空白：rstrip()
-              删除开头空白：lstrip()
-              删除两端空白：strip()
-    """
-    message = "hello "
-    # 输出hello
-    print(message)
-    # 对message的内容做删除末尾空白处理
-    print(message.rstrip())
-    # 再次执行 恢复到原来的样子
-    print(message)
-    # 删除末尾的空白，再将新值存储到原来的变量中。
-    message = message.rstrip()
-    # 在输出就依然是处理后的数据
+### str()函数      
+        str()函数： 将数字转为字符串
+            在字符串使用整数的时候，可以使用str()函数
+        整数、浮点数：
+            + - * /   使用括号决定优先级
+    age = 10
+    # 将数字类型的age用str函数转为字符串
+    message = "祝你" +str(age) + "岁生日快乐"
     print(message)
     
-    # 前面有空白 使用lstrip()删除
-    name = " zhangsan"
-    print(name)
-    name = name.lstrip()
-    print(name)
-    
-    # 两边有空白 使用strip()删除
-    name = " zhangsan "
-    print(name)
-    name = name.strip()
-    print(name)
-    
-    """
+### 整数和浮点数
     整数
     浮点数
     + - * /   使用括号决定优先级
@@ -97,9 +91,12 @@
     print(2 + 3)
     print(3 - 2)
     print(2 * 3)
-    print(4 / 2)
+    print(4 / 2) 
+        
     
-    age = 10
-    # 将数字类型的age用str函数转为字符串
-    message = "祝你" +str(age) + "岁生日快乐"
-    print(message)
+    
+    
+     
+    
+    
+    
